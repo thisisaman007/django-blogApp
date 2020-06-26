@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECRET_KEY = 'y)j1i=v!e6je1mhsm*j%%sq6(ga7#x0^o+9aw1381ygi0*z(9!'
 SECRET_KEY=os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['blog-app-django1.herokuapp.com']
 
